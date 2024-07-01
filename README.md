@@ -87,3 +87,5 @@ git pull origin main
 - **Tree View**: On Windows, use `tree /F` to see a tree representation of directories and files.
 
 This enhanced tutorial aims to solidify your understanding of Git basics while introducing you to more nuanced commands and workflows, promoting effective collaboration and version control management.
+
+# Additional
