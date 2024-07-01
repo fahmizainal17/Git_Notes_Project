@@ -9,7 +9,7 @@ Clone the repository to get a local copy of the code on your machine.
 ```
 git clone <repository-url>
 cd <repository-directory>
-```
+```git
 Replace `<repository-url>` with the actual URL of the repository.
 
 ### 2. Update the Local Repository:
@@ -157,4 +157,4 @@ git push
 - [Git Commands](https://git-scm.com/docs)
 - [Git Workflow](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 
-This comprehensive syllabus aims to solidify your understanding of Git basics while introducing you to more advanced commands and workflows, promoting effective collaboration and version control management.
+This comprehensive syllabus aims to solidify your understanding of Git basics while introducing you to more advanced commands and workflows, promoting effective collaboration and version control management.Thank you.
