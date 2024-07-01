@@ -4,7 +4,7 @@ This Git Notes encompasses fundamental commands and expands upon additional conc
 
 ### 1. Clone a Repository:
 Clone the repository to get a local copy of the code on your machine.
-```bash
+```git
 git clone <repository-url>
 cd <repository-directory>
 ```
@@ -12,30 +12,30 @@ Replace `<repository-url>` with the actual URL of the repository.
 
 ### 2. Update the Local Repository:
 Update your local copy to ensure it's synchronized with the main branch.
-```bash
+```git
 git pull origin main
 ```
 Replace `main` with the name of your primary branch if different.
 
 ### 3. Create a New Branch:
 Create a new branch for feature development or bug fixing.
-```bash
+```git
 git branch feature-branch
 ```
 
 ### 4. Switch to the New Branch:
 Switch your working directory to the new branch.
-```bash
+```git
 git checkout feature-branch
 ```
 Or create and switch in one step:
-```bash
+```git
 git checkout -b feature-branch
 ```
 
 ### 5. Add and Commit Changes:
 After making changes, add them to the staging area and commit.
-```bash
+```git
 # Add changes to the staging area
 git add .
 
@@ -52,13 +52,13 @@ Specify untracked files and directories.
 ```
 
 ### 7. Save and Commit `.gitignore`:
-```bash
+```git
 git add .gitignore
 git commit -m "Add .gitignore file"
 ```
 
 ### 8. Push Changes to the Main Branch:
-```bash
+```git
 git push origin main
 ```
 
@@ -66,12 +66,12 @@ git push origin main
 Open a pull request for code review and merging your changes.
 
 ### 10. Switch Back to the Main Branch:
-```bash
+```git
 git checkout main
 ```
 
 ### 11. Update the Local Main Branch:
-```bash
+```git
 git pull origin main
 ```
 
