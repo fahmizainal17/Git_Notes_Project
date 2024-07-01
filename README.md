@@ -2,14 +2,14 @@
 
 This syllabus covers fundamental Git commands and expands on additional concepts to provide a thorough understanding of Git for version control management. It also includes setup instructions for VS Code, GitHub, and common command line operations.
 
-## Git Basics
+### Git Basics
 
 ### 1. Clone a Repository:
 Clone the repository to get a local copy of the code on your machine.
 ```
 git clone <repository-url>
 cd <repository-directory>
-```
+```git
 Replace `<repository-url>` with the actual URL of the repository.
 
 ### 2. Update the Local Repository:
