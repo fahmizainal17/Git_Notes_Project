@@ -2,7 +2,7 @@
 
 This syllabus covers fundamental Git commands and expands on additional concepts to provide a thorough understanding of Git for version control management. It also includes setup instructions for VS Code, GitHub, and common command line operations.
 
-### Git Basics
+## Git Basics
 
 ### 1. Clone a Repository:
 Clone the repository to get a local copy of the code on your machine.
@@ -157,4 +157,4 @@ git push
 - [Git Commands](https://git-scm.com/docs)
 - [Git Workflow](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 
-This comprehensive syllabus aims to solidify your understanding of Git basics while introducing you to more advanced commands and workflows, promoting effective collaboration and version control management.
+This comprehensive syllabus aims to solidify your understanding of Git basics while introducing you to more advanced commands and workflows, promoting effective collaboration and version control management.Thank you.
