@@ -1,7 +1,3 @@
-Here's a structured version of the syllabus with a clickable table of contents, allowing for easy navigation through the content:
-
----
-
 # **Comprehensive Git and Development Environment Syllabus**
 
 ## **Table of Contents**
@@ -206,5 +202,3 @@ venv_name/Scripts/activate
 - **Git Workflow:** Learn about different Git workflows to enhance collaboration and code management.
 
 ---
-
-This syllabus provides a comprehensive guide to understanding Git, GitHub, and setting up a development environment, with a clear structure that allows for easy navigation and reference.
