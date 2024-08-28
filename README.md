@@ -1,160 +1,236 @@
-# Comprehensive Git and Development Environment Syllabus
+# **Comprehensive Git and Development Environment Syllabus**
 
-This syllabus covers fundamental Git commands and expands on additional concepts to provide a thorough understanding of Git for version control management. It also includes setup instructions for VS Code, GitHub, and common command line operations.
+## **Table of Contents**
 
-## Git Basics
+1. [Git Basics](#git-basics)
+   - [Clone a Repository](#clone-a-repository)
+   - [Update the Local Repository](#update-the-local-repository)
+   - [Create a New Branch](#create-a-new-branch)
+   - [Switch to the New Branch](#switch-to-the-new-branch)
+   - [Add and Commit Changes](#add-and-commit-changes)
+   - [Create a `.gitignore` File](#create-a-gitignore-file)
+   - [Save and Commit `.gitignore`](#save-and-commit-gitignore)
+   - [Push Changes to the Remote Repository](#push-changes-to-the-remote-repository)
+   - [Open a Pull Request](#open-a-pull-request)
+   - [Switch Back to the Main Branch](#switch-back-to-the-main-branch)
+   - [Update the Local Main Branch](#update-the-local-main-branch)
 
-### 1. Clone a Repository:
-Clone the repository to get a local copy of the code on your machine.
-```
+2. [Additional Git Commands and Concepts](#additional-git-commands-and-concepts)
+
+3. [Development Environment Setup](#development-environment-setup)
+   - [Preparation & Expectation](#preparation--expectation)
+   - [Explore Common Development Operations](#explore-common-development-operations)
+     - [Environment Creation and Activation](#environment-creation-and-activation)
+     - [Common Command Line Commands](#common-command-line-commands)
+     - [Common Python Project Structure](#common-python-project-structure)
+     - [Starting a Project in VS Code](#starting-a-project-in-vs-code)
+
+4. [Extras](#extras)
+
+5. [Additional Reference](#additional-reference)
+
+---
+
+## **Git Basics**
+
+### **Clone a Repository**
+- Clone a repository to get a local copy of the code on your machine.
+```bash
 git clone <repository-url>
 cd <repository-directory>
-```git
-Replace `<repository-url>` with the actual URL of the repository.
-
-### 2. Update the Local Repository:
-Update your local copy to ensure it's synchronized with the main branch.
 ```
+- Replace `<repository-url>` with the actual URL of the repository.
+
+[Visual Explanation: How to Clone a Repository](https://www.freecodecamp.org/news/git-clone-command/)
+
+### **Update the Local Repository**
+- Update your local copy to ensure it's synchronized with the main branch.
+```bash
 git pull origin main
 ```
-Replace `main` with the name of your primary branch if different.
+- Replace `main` with the name of your primary branch if different.
 
-### 3. Create a New Branch:
-Create a new branch for feature development or bug fixing.
-```
+[Visual Guide: Git Pull Explained](https://www.atlassian.com/git/tutorials/syncing/git-pull)
+
+### **Create a New Branch**
+- Create a new branch for feature development or bug fixing.
+```bash
 git branch feature-branch
 ```
 
-### 4. Switch to the New Branch:
-Switch your working directory to the new branch.
-```
+[Visual Guide: Git Branching](https://learngitbranching.js.org/)
+
+### **Switch to the New Branch**
+- Switch your working directory to the new branch.
+```bash
 git checkout feature-branch
 ```
-Or create and switch in one step:
-```
+- Or create and switch in one step:
+```bash
 git checkout -b feature-branch
 ```
 
-### 5. Add and Commit Changes:
-After making changes, add them to the staging area and commit.
-```
-# Add changes to the staging area
-git add .
+[Interactive Tutorial: Git Checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout)
 
-# Commit changes
+### **Add and Commit Changes**
+- After making changes, add them to the staging area and commit.
+```bash
+git add .
 git commit -m "Description of your changes"
 ```
 
-### 6. Create a `.gitignore` File:
-Specify untracked files and directories.
+[Video Tutorial: Git Add and Commit Explained](https://www.youtube.com/watch?v=HVsySz-h9r4)
+
+### **Create a `.gitignore` File**
+- Specify files and directories to be ignored by Git.
 ```plaintext
 # Example .gitignore content
 .idea/
 *.pyc
 ```
 
-### 7. Save and Commit `.gitignore`:
-```
+[Example: Common Gitignore Templates](https://www.toptal.com/developers/gitignore)
+
+### **Save and Commit `.gitignore`**
+- Save and commit the `.gitignore` file.
+```bash
 git add .gitignore
 git commit -m "Add .gitignore file"
 ```
 
-### 8. Push Changes to the Main Branch:
-```
+### **Push Changes to the Remote Repository**
+- Push your committed changes to the remote repository.
+```bash
 git push origin main
 ```
 
-### 9. Open a Pull Request:
-Open a pull request for code review and merging your changes.
+[Visual Guide: Pushing Changes to a Remote Repository](https://www.atlassian.com/git/tutorials/saving-changes/git-push)
 
-### 10. Switch Back to the Main Branch:
-```
+### **Open a Pull Request**
+- Open a pull request for code review and merging your changes.
+
+[Visual Guide: How to Create a Pull Request on GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes/creating-a-pull-request)
+
+### **Switch Back to the Main Branch**
+- Switch to the main branch.
+```bash
 git checkout main
 ```
 
-### 11. Update the Local Main Branch:
-```
+### **Update the Local Main Branch**
+- Pull the latest changes from the remote main branch.
+```bash
 git pull origin main
 ```
 
-## Additional Git Commands and Concepts:
-- **Checking Status**: Use `git status` to see the status of your changes.
-- **Staging Area**: Understand the importance of the staging area for preparing commits.
-- **Commit Message Standards**: Adopt a consistent format for commit messages.
-- **Pushing and Pull Requests**: Familiarize yourself with pushing branches and opening pull requests.
-- **Switching Branches**: Use `git checkout` to switch between branches.
-- **Remote Branches**: List remote branches with `git branch -r`.
-- **Undoing Changes**: Use `git revert <commit-hash>` to undo specific changes.
-- **Navigating Directories**: Use commands like `ls` and `cd` to navigate your file system.
-- **Tree View**: On Windows, use `tree /F` to see a tree representation of directories and files.
+---
 
-## Development Environment Setup
+## **Additional Git Commands and Concepts**
 
-### Preparation & Expectation:
-1. **Download VS Code** from the Microsoft Store.
-2. **Get your GitHub Account**.
+- **Checking Status:** Use `git status` to see the status of your changes.
+- **Staging Area:** Understand the importance of the staging area for preparing commits.
+- **Commit Message Standards:** Adopt a consistent format for commit messages.
+- **Pushing and Pull Requests:** Familiarize yourself with pushing branches and opening pull requests.
+- **Switching Branches:** Use `git checkout` to switch between branches.
+- **Remote Branches:** List remote branches with `git branch -r`.
+- **Undoing Changes:** Use `git revert <commit-hash>` to undo specific changes.
 
-### Explore:
-#### A. Environment Creation and Activation:
+[Visual Reference: Git Cheat Sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
+
+---
+
+## **Development Environment Setup**
+
+### **Preparation & Expectation**
+
+- **Download VS Code:** Get VS Code from the Microsoft Store.
+- **GitHub Account:** Ensure you have a GitHub account.
+
+[Visual Guide: Setting Up VS Code](https://code.visualstudio.com/docs/setup/setup-overview)
+
+### **Explore Common Development Operations**
+
+#### **Environment Creation and Activation**
 - Create and activate a Python virtual environment:
 ```bash
 python -m venv venv_name
 venv_name/Scripts/activate
 ```
-- Know where `.git` is located and where your environment is installed.
+- Understand where the `.git` directory and your virtual environment are located.
 
-#### B. Common Command Line Commands:
-- Change directory: `cd <directory>`
-- Move up one directory: `cd ..`
-- Check status: `git status`
-- Add changes to staging: `git add .`
-- Commit changes: `git commit -m "feat: add feature"`
-- Push changes: `git push`
-- Pull changes: `git pull`
-- Rebase: `git pull --rebase`
-- Create a branch: `git branch branch_name`
-- Switch to a branch: `git checkout branch_name`
-- Fetch all branches: `git fetch --all`
-- Create a pull request on GitHub
-- Clone a repository: `git clone <repository-url>`
-- Tree view of directories: `tree /F`
-- Install Python packages: `pip install <package>`
-- Freeze packages: `pip freeze > requirements.txt`
-- Show installed packages: `pip show <package>`
+[Visual Guide: Python Virtual Environment Setup](https://realpython.com/python-virtual-environments-a-primer/)
 
-#### C. Common Python Project Structure:
-- `main.py`
-- `README.md`
-- `.gitignore`
-- `LICENSE`
-- Modules
-- Importing modules
-- `__init__.py`
-- `requirements.txt`
+#### **Common Command Line Commands**
+- **Navigation:**
+  - Change directory: `cd <directory>`
+  - Move up one directory: `cd ..`
+- **Git Operations:**
+  - Check status: `git status`
+  - Add changes to staging: `git add .`
+  - Commit changes: `git commit -m "feat: add feature"`
+  - Push changes: `git push`
+  - Pull changes: `git pull`
+  - Rebase: `git pull --rebase`
+  - Create a branch: `git branch branch_name`
+  - Switch to a branch: `git checkout branch_name`
+  - Fetch all branches: `git fetch --all`
+  - Clone a repository: `git clone <repository-url>`
+- **Tree View:**
+  - On Windows, use `tree /F` to see a tree representation of directories and files.
+- **Python Package Management:**
+  - Install packages: `pip install -r requirements.txt`
+  - Freeze packages: `pip freeze > requirements.txt`
+  - Show installed packages: `pip show <package>`
 
-#### D. Start a Project on VS Code:
-1. Open a folder.
-2. Change directory to your project: `cd <project-directory>`.
-3. Clone the repository: `git clone <repository-url>`.
-4. Create and activate the environment.
-5. Check status: `git status`.
-6. Make changes, save, check status, add changes, commit, and push:
-```bash
-git add .
-git commit -m "feat: add features"
-git push
-```
-7. Verify changes on GitHub, and vice versa.
+[Visual Guide: Command Line Basics](https://www.codecademy.com/learn/learn-the-command-line)
 
-### Extras:
-- **Extensions and GUI on VS Code**.
-- **Questions**: Think of any questions based on the above content.
-- **Pipreqs Command Line**.
-- **Forking GitHub Repositories**: Understand local and remote repositories.
-- **Ubuntu and WSL**: Explore if needed.
+#### **Common Python Project Structure**
+- **Project Files:**
+  - `main.py`
+  - `README.md`
+  - `.gitignore`
+  - `LICENSE`
+  - `requirements.txt`
+- **Modules and Imports:**
+  - Organize your code into modules and use `__init__.py` to make them importable.
 
-## Additional Reference
-- [Git Commands](https://git-scm.com/docs)
-- [Git Workflow](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+[Visual Guide: Python Project Structure](https://realpython.com/python-application-layouts/)
 
-This comprehensive syllabus aims to solidify your understanding of Git basics while introducing you to more advanced commands and workflows, promoting effective collaboration and version control management.Thank you.
+#### **Starting a Project in VS Code**
+- **Project Setup:**
+  - Open a folder and navigate to your project directory: `cd <project-directory>`.
+  - Clone the repository: `git clone <repository-url>`.
+- **Environment and Git Operations:**
+  - Create and activate the environment.
+  - Check status: `git status`.
+  - Make changes, save, and commit: 
+  ```bash
+  git add .
+  git commit -m "feat: add features"
+  ```
+  - Push changes: `git push`.
+  - Verify changes on GitHub and vice versa.
+
+[Visual Guide: Getting Started with VS Code](https://code.visualstudio.com/docs/introvideos/basics)
+
+---
+
+## **Extras**
+
+- **VS Code Extensions and GUI:** Explore useful extensions and GUI features in VS Code.
+- **Pipreqs Command Line:** Automate the creation of `requirements.txt` with pipreqs.
+- **Forking GitHub Repositories:** Understand the difference between local and remote repositories, and the process of forking.
+- **Ubuntu and WSL:** Explore Ubuntu and Windows Subsystem for Linux (WSL) for a Linux-like development environment.
+
+[Visual Guide: Top VS Code Extensions](https://dev.to/nickytonline/25-vs-code-extensions-that-make-your-life-better-26hc)
+
+---
+
+## **Additional Reference**
+
+- **Git Commands:** Master a variety of Git commands for effective version control.
+- **Git Workflow:** Learn about different Git workflows to enhance collaboration and code management.
+
+[Visual Guide: Git Best Practices](https://www.atlassian.com/git/tutorials/comparing-workflows)
+
+---
