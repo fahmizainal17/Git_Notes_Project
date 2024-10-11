@@ -181,6 +181,7 @@ source venv_name/bin/activate  # On Windows use `venv_name\Scripts\activate`
 - **Python Package Management:**
   - Install packages: `pip install -r requirements.txt`
   - Freeze dependencies: `pip freeze > requirements.txt`
+  - pipreqs How? `pip install pipreqs` , `pipreqs . --force`
   - Show installed packages: `pip show <package>`
 
 #### **Common Python Project Structure**
